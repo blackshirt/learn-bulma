@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "jshint": "^2.11.0"
+  }
+}
