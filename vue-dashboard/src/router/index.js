@@ -5,12 +5,13 @@ import Dashboard from "../pages/Dashboard.vue";
 import Books from "../pages/Books.vue";
 import Customers from "../pages/Customers.vue";
 import Orders from "../pages/Orders.vue";
-import Home from "../components/Home.vue";
+import Home from "../pages/Home.vue";
 
 Vue.use(Router);
 
 export default new Router({
-    routes: [{
+    routes: [
+        {
             path: "/",
             name: Home,
             component: Home
