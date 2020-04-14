@@ -1,6 +1,7 @@
 
 node_modules 
 ulp
+vue-dashboard/node_modules
 *.env 
 .env* 
 *.local
