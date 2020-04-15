@@ -7,14 +7,17 @@
 </template>
 
 <script>
-// eslint-disable-next-line
-const default_layout = "default";
-export default {
-  computed: {
-    layout() {
-      // eslint-disable-next-line
-      return (this.$route.meta.layout || default_layout) + "-layout";
-    }
-  }
-};
+    // eslint-disable-next-line
+
+
+    const default_layout = "default-layout";
+    export default {
+        computed: {
+            layout() {
+                // eslint-disable-next-line
+                return (this.$route.meta.layout || default_layout);
+            }
+        },
+
+    };
 </script>

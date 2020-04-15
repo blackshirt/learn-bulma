@@ -1,9 +1,9 @@
 <template>
-    <nav class="navbar has-shadow">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item">
-                <img src="../assets/logo.png">
-            </a>
+            <router-link class="navbar-item" to="/">
+                <img src="../assets/logo.png" height="128">
+            </router-link>
             <div class="navbar-burger">
                 <span></span>
                 <span></span>
@@ -13,7 +13,13 @@
         <div class="navbar-menu">
             <div class="navbar-start">
                 <div class="navbar-item">
-                    <small>your ulp belts</small>
+                    <router-link to="/">Home</router-link>
+                </div>
+                <div class="navbar-item">
+                    <router-link to="/dashboard">Dashboard</router-link>
+                </div>
+                <div class="navbar-item">
+                    <router-link to="/login">Login</router-link>
                 </div>
             </div>
             <div class="navbar-end">
@@ -22,15 +28,15 @@
                     <div class="navbar-dropdown">
                         <a class="navbar-item">
                             <div> <span class="icon is-small">
-                            <i class="fa fa-usd"></i>
-                                </span>Profile
+                                    <i class="fa fa-user"></i>
+                                </span> Profile
                             </div>
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" @click="openBugReport = true">
                             <div>
                                 <span class="icon is-small">
                                     <i class="fa fa-bug"></i>
-                                </span>Report
+                                </span> Report
                             </div>
                         </a>
                         <a class="navbar-item">
@@ -44,11 +50,23 @@
                 </div>
             </div>
         </div>
+        <BugReport :showModal="openBugReport" v-on:close="openBugReport = false"></BugReport>
     </nav>
+
 </template>
 
 <script>
-export default {
-    name: "Navbar",
-};
+    import BugReport from "../components/BugReport.vue";
+
+    export default {
+        name: "Navbar",
+        components: {
+            BugReport
+        },
+        data() {
+            return {
+                openBugReport: false
+            }
+        },
+    };
 </script>

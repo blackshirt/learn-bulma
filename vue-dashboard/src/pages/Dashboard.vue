@@ -8,11 +8,14 @@
 </template>
 
 <script>
-import DashboardMenu from "../components/DashboardMenu";
-import DashboardContent from "../components/DashboardContent";
+    import DashboardMenu from "../components/DashboardMenu";
+    import DashboardContent from "../components/DashboardContent";
 
-export default {
-  name: "Dashboard",
-  components: { DashboardMenu, DashboardContent }
-};
+    export default {
+        name: "Dashboard",
+        components: {
+            DashboardMenu,
+            DashboardContent
+        }
+    };
 </script>
