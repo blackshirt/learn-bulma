@@ -2178,6 +2178,11 @@ code-point-at@^1.0.0:
   resolved "https://registry.npm.taobao.org/code-point-at/download/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
+collect.js@^4.21.0:
+  version "4.21.0"
+  resolved "https://registry.yarnpkg.com/collect.js/-/collect.js-4.21.0.tgz#f5ce2a6653d9595f35f5a1acebec977d6003b85b"
+  integrity sha512-BFHk+iv7psufMHO7iHII4eTZjMbUbhcOwe3wt4B/Lt1h3+kYIbcAZMAPu6gYB/dBceBTS3I0y+dIpKuT4CCAVw==
+
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/collection-visit/download/collection-visit-1.0.0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
